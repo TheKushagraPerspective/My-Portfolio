@@ -75,9 +75,9 @@ const Home = () => {
         </div>
       </main>
 
-      {/* <About /> */}
+      <About />
 
-      {/* <Services /> */}
+      <Services />
     </>
   );
 };
