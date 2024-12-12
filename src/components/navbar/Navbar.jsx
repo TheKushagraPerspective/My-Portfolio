@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './navbar.css';
 
 const Navbar = () => {
@@ -11,40 +10,48 @@ const Navbar = () => {
             <a className="navbar-brand" href="#">
               PORTFOLIO
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+            <button
+              className="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarTogglerDemo02"
+              aria-controls="navbarTogglerDemo02"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span className="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse justify-content-between" id="navbarTogglerDemo02">
-              {/* Left Side (Optional: Placeholder for any additional left items) */}
+            <div className="collapse navbar-collapse justify-content-between" id="navbarTogglerDemo02">
+              {/* Left Side (PORTFOLIO text already handled by navbar-brand) */}
               <div></div>
 
               {/* Right Side Links */}
               <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li className="nav-item px-2">
-                  <Link to="/" className="nav-link active">
+                  <a href="#home" className="nav-link active">
                     Home
-                  </Link>
+                  </a>
                 </li>
                 <li className="nav-item px-2">
-                  <Link to="/about" className="nav-link">
+                  <a href="#about" className="nav-link">
                     About
-                  </Link>
+                  </a>
                 </li>
                 <li className="nav-item px-2">
-                  <Link to="/skills" className="nav-link">
+                  <a href="#skills" className="nav-link">
                     Skills
-                  </Link>
+                  </a>
                 </li>
                 <li className="nav-item px-2">
-                  <Link to="/portfolio" className="nav-link">
+                  <a href="#portfolio" className="nav-link">
                     Portfolio
-                  </Link>
+                  </a>
                 </li>
                 <li className="nav-item px-2">
-                  <Link to="/contact" className="nav-link">
+                  <a href="#contact" className="nav-link">
                     Contact
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </div>

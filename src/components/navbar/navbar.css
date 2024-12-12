@@ -5,7 +5,7 @@
 }
 
 .navbar-main {
-    background-color: rgb(12, 25, 48);
+    background-color: rgb(5, 13, 27);
 }
 
 
@@ -23,4 +23,39 @@
     font-size: 1.7rem;
     font-weight: 600;
     color: #fff;
+}
+
+
+.navbar li {
+    animation: slideTop 1s ease forwards;
+}
+
+.navbar .navbar-brand {
+    animation: slideRight 1s ease forwards;
+}
+
+
+
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }

@@ -1,0 +1,128 @@
+.about-image .about-inner-img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    border-radius: 10px;
+    background-color: transparent;
+    box-shadow:
+      0 0 20px 5px rgba(255, 0, 0, 0.7), /* Red */
+      0 0 40px 15px rgba(0, 255, 0, 0.5), /* Green */
+      0 0 60px 25px rgba(0, 0, 255, 0.6); /* Blue */
+  }
+  
+  .about-main {
+    padding: 50px 0; /* Optional padding for section */
+    background-color: rgb(12, 25, 48);
+  }
+  
+  .about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .about-image {
+    flex: 1; /* Takes equal width */
+  }
+  
+  .about-text {
+    flex: 1; /* Takes equal width */
+    text-align: left; /* Aligns text to the left */
+  }
+  
+  .about-text h2,
+  .about-text h4 {
+    margin-bottom: 15px; /* Space between heading and paragraph */
+  }
+  
+  .about-inner-img {
+    width: 100%; /* Ensure image scales with the container */
+    height: auto;
+  }
+  
+  .about-text {
+    color: #fff;
+    padding-left: 10px;
+  }
+  
+  .about-text p {
+    line-height: 1.6;
+    text-align: justify;
+    color: aliceblue;
+  }
+  
+  .about-text h2 {
+    font-size: 40px;
+  }
+  
+  .about-text span {
+    color: #0ef;
+  }
+  
+  .about-text h4 {
+    font-size: 29px;
+    font-weight: 600;
+    margin: 15px 0 30px;
+  }
+
+  .about-text .btn-box {
+    animation: slideTop 1s ease forwards;
+  }
+
+
+  
+  /* Media query for screen width <= 978px (column flex) */
+  @media (max-width: 1024px) {
+    .container {
+      flex-direction: column; /* Stack image and text vertically */
+      text-align: center; /* Center-align text */
+    }
+
+    .about-text {
+        padding-top: 50px;
+    }
+
+    .about-text h2 {
+        font-size: 50px; /* Adjust h2 font size on smaller screens */
+      }
+    
+      .about-text h4 {
+        font-size: 40px; /* Adjust h4 font size on smaller screens */
+      }
+    
+      .about-text p {
+        font-size: 20px; /* Adjust font size for paragraph */
+        color: aliceblue;
+      }
+  }
+  
+  /* Media query for screen width <= 576px (hide image) */
+  @media (max-width: 576px) {
+    .about-image {
+      display: none; /* Hide the image on smaller screens */
+    }
+  
+    .about-text {
+      flex: 0 0 auto; /* Let text section take its natural width */
+      margin-bottom: 20px; /* Space between image and text */
+    }
+  
+    .about-inner-img {
+      max-width: 300px; /* Smaller image size on mobile */
+      margin: 0 auto; /* Center the image */
+    }
+  
+    .about-text h2 {
+      font-size: 35px; /* Adjust h2 font size on smaller screens */
+    }
+  
+    .about-text h4 {
+      font-size: 24px; /* Adjust h4 font size on smaller screens */
+    }
+  
+    .about-text p {
+      font-size: 14px; /* Adjust font size for paragraph */
+        color: aliceblue;
+    }
+  }
+  
