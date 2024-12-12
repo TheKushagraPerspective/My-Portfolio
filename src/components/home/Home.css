@@ -176,6 +176,13 @@
       height: auto;
     }
 
+    .home-content .home-paragraph {
+      padding-top: 8px !important;
+      font-size: 14px !important;
+      font-weight: 200 !important;
+      
+    }
+
     .home-content .name-heading3 {
       font-size: 18px !important; /* Corrected font-size value */
     }

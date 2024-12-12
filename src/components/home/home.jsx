@@ -39,7 +39,7 @@ const Home = () => {
             <h3 className="name-heading3 animate__animated animate__fadeIn" style={{ fontWeight: 600, fontSize: "30px" }}>
               And I'm a <span style={{ color: "#0ef" }} ref={typedRef}></span>
             </h3>
-            <p className="animate__animated animate__fadeIn" style={{ fontSize: "15px" }}>
+            <p className="home-paragraph animate__animated animate__fadeIn" style={{ fontSize: "15px" }}>
               I'm a web developer with extensive knowledge.<br />
               My expertise includes creating and designing websites, frontend design, and more...
             </p>
