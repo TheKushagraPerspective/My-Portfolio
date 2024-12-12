@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import Typed from "typed.js";
 import Navbar from "../navbar/Navbar";
 import "./Home.css"; // You can still use some custom CSS if needed
+import MyImage from '../../assets/circle-image.png'
 
 const Home = () => {
   const typedRef = useRef(null);
@@ -59,7 +60,7 @@ const Home = () => {
           {/* Right Side Image */}
           <div className="home-image text-center">
             <img
-              src="./src/assets/circle-image.png"
+              src={MyImage}
               alt="Portfolio Profile"
               className="image-fluid"
             />
