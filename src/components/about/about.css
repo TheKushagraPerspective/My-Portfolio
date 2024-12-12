@@ -13,6 +13,7 @@
   .about-main {
     padding: 50px 0; /* Optional padding for section */
     background-color: rgb(12, 25, 48);
+    border-bottom: 1px solid white;
   }
   
   .about-container {

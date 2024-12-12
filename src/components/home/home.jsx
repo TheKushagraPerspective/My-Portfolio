@@ -30,13 +30,13 @@ const Home = () => {
         <div className="container d-flex flex-column flex-md-row align-items-center">
           {/* Left Side Content */}
           <section className="home-content mr-5 mb-4 mb-md-0">
-            <h3 className="animate__animated animate__fadeIn" style={{ fontWeight: 600, fontSize: "30px" }}>
+            <h3 className="name-heading1 animate__animated animate__fadeIn" style={{ fontWeight: 600, fontSize: "30px" }}>
               Hello, It's Me
             </h3>
-            <h1 className="animate__animated animate__fadeIn" style={{ fontWeight: 600, fontSize: "40px" }}>
+            <h1 className="name-heading2 animate__animated animate__fadeIn" style={{ fontWeight: 600, fontSize: "40px" }}>
               Kushagra Varshney
             </h1>
-            <h3 className="animate__animated animate__fadeIn" style={{ fontWeight: 600, fontSize: "30px" }}>
+            <h3 className="name-heading3 animate__animated animate__fadeIn" style={{ fontWeight: 600, fontSize: "30px" }}>
               And I'm a <span style={{ color: "#0ef" }} ref={typedRef}></span>
             </h3>
             <p className="animate__animated animate__fadeIn" style={{ fontSize: "15px" }}>
@@ -72,8 +72,11 @@ const Home = () => {
           <aside className="home-image text-center">
             <img src={MyImage} alt="Portfolio Profile" className="image-fluid" />
           </aside>
+          
         </div>
+        
       </main>
+      
 
       <About />
 
