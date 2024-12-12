@@ -103,5 +103,17 @@
     .home-main {
       height: auto;
     }
+
+    .home-content .name-heading3 {
+      font-size: 18px !important; /* Corrected font-size value */
+    }
+
+    .home-content .name-heading2 {
+      font-size: 30px !important;
+    }
+
+    .home-content .name-heading1 {
+
+    }
   }
   
