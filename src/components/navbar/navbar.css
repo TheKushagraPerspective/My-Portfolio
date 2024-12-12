@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar-main {
+    background-color: rgb(12, 25, 48);
+}
+
+
+
+.nav-link  {
+    color: #fff !important;
+  }
+  
+.nav-link:hover {
+    color: #0ef !important;
+
+}
+
+.navbar-brand {
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #fff;
+}

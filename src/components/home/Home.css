@@ -1,0 +1,107 @@
+.home-main {
+    background-color: rgb(12, 25, 48); /* Dark background */
+    height: 90vh;
+    display: flex;
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Horizontally center content */
+  }
+  
+  .home-content {
+    text-align: left;
+    padding: 20px;
+  }
+  
+  .home-sci a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #0ef;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  
+  .home-sci a:hover {
+    background: #0ef;
+    color: #081b29;
+    box-shadow: 0 0 20px #0ef;
+  }
+  
+  .home-content h1,
+  .home-content h3,
+  .home-content p {
+    font-weight: 600; /* Apply font-weight: 600 */
+  }
+  
+  .home-sci a {
+    font-weight: 600; /* Apply font-weight: 600 to social media links (optional) */
+  }
+  
+  .btn-box {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0ef;
+    color: #081b29;
+    font-size: 16px;
+    border-radius: 40px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 0 5px cyan, 0 0 10px cyan;
+  }
+  
+  .btn-box:hover {
+    box-shadow: 0 0 10px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 20px cyan;
+    text-decoration: none;
+  }
+  
+  .home-image img {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    border-radius: 50%;
+    background-color: transparent;
+    box-shadow:
+      0 0 20px 5px rgba(255, 0, 0, 0.7), /* Red */
+      0 0 40px 15px rgba(0, 255, 0, 0.5), /* Green */
+      0 0 60px 25px rgba(0, 0, 255, 0.6); /* Blue */
+  }
+  
+  @media (max-width: 1000px) {
+    .home-image img {
+      max-width: 500px; /* Smaller size on mobile devices */
+      height: auto;
+    }
+  
+    .home-main {
+      height: auto;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .home-image img {
+      max-width: 400px; /* Smaller size on mobile devices */
+      height: auto;
+    }
+  
+    .home-main {
+      height: auto;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .home-image img {
+      max-width: 350px; /* Even smaller size on very small screens (phones) */
+      height: auto;
+    }
+  
+    .home-main {
+      height: auto;
+    }
+  }
+  
