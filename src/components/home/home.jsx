@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import Typed from "typed.js";
 import Navbar from "../navbar/Navbar";
 import "./Home.css";
-import MyImage from "../../assets/circle-image.png";
+import MyImage from "../../assets/my-image.png";
 import About from "../about/About";
 import Services from "../Services/Services";
 
