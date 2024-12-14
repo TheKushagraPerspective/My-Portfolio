@@ -1,0 +1,320 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.skills-section {
+    background-color: rgb(12, 25, 48); /* Dark background */
+    color: #ffffff;
+}
+
+
+.skill-title {
+    text-align: center;
+    font-size: 60px;
+    cursor: pointer;
+}
+
+
+.skill-title span {
+    color: #0ef;
+}
+
+
+.technical-skills-heading {
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;   
+}
+
+
+.bar {
+    font-size: 1.4rem;
+    margin-top: 40px 0;
+}
+
+
+
+
+.skill-technical-bars .bar:first-child {
+    margin-top: 0;
+}
+
+
+.skill-technical-bars .bar:last-child {
+    margin-bottom: 0;
+}
+
+
+.skill-technical-bars .bar .tech-info {
+    margin-bottom: 2px;
+}
+
+
+
+
+
+.skill-technical-bars .bar .tech-info span {
+    font-size: 1rem;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 1; 
+    color: #ffffff !important;
+}
+
+.skill-technical-bars .bar .progress-line {
+    position: relative;
+    width: 100%;
+    height: 5px;
+    background-color: #222; /* Changed to ensure contrast */
+    border-radius: 10px;
+    overflow: hidden; /* Ensure child elements are clipped */
+}
+
+/* Progress Line General Styles */
+.skill-technical-bars .bar .progress-line span {
+    position: absolute;
+    height: 100%;
+    background-color: #0ef; /* Progress bar color */
+    border-radius: 10px;
+    animation: fillBar 2s ease-in-out forwards; /* Assign animation */
+    transform-origin: left;
+    width: 0;
+}
+
+/* Define keyframes for the animation */
+@keyframes fillBar {
+    from {
+        width: 0%; /* Start from 0% */
+    }
+    to {
+        width: var(--target-width); /* Use CSS variables for target width */
+    }
+}
+
+/* Specific skill progress percentages using CSS variables */
+.progress-line.html span {
+    --target-width: 90%;
+    animation-delay: 0.5s; /* Staggered animations */
+}
+
+.progress-line.css span {
+    --target-width: 70%;
+    animation-delay: 0.7s;
+}
+
+.progress-line.javascript span {
+    --target-width: 85%;
+    animation-delay: 0.9s;
+}
+
+.progress-line.reactjs span {
+    --target-width: 75%;
+    animation-delay: 1.1s;
+}
+
+.progress-line.nodejs span {
+    --target-width: 70%;
+    animation-delay: 1.3s;
+}
+
+.progress-line.mongodb span {
+    --target-width: 75%;
+    animation-delay: 1.5s;
+}
+
+.progress-line.dsa span {
+    --target-width: 80%;
+    animation-delay: 1.7s;
+}
+
+
+
+.progress-line span::after {
+    position: absolute;
+    padding: 1px 8px;
+    background-color: #000;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 3px;
+    top: -28px;
+    right: -20px;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+
+
+.progress-line.html span::after {
+    content: "90%";
+}
+
+
+.progress-line.css span::after {
+    content: "70%";
+}
+
+
+.progress-line.javascript span::after {
+    content: "85%";
+}
+
+
+.progress-line.reactjs span::after {
+    content: "75%";
+}
+
+
+.progress-line.nodejs span::after {
+    content: "70%";
+}
+
+
+.progress-line.mongodb span::after {
+    content: "75%";
+}
+
+
+.progress-line.dsa span::after {
+    content: "80%";
+}
+
+
+.progress-line span::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    top: -10px;
+    right: 0;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+
+
+@keyframes showText {
+    100% {
+        opacity: 1;
+    }    
+}
+
+
+.radial-bars .radial-bar {
+    position: relative;
+    width: 50%;
+    height: 170px;
+    margin-bottom: 10px;
+}
+
+.radial-bars .radial-bar svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%) rotate(-90deg);
+    width: 120px;
+    height: 160px;
+}
+
+.radial-bars .radial-bar .progress-bar {
+    stroke-width: 10;
+    stop-color: black;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+    animation: animate-bar 1s linear forwards0;
+}
+
+@keyframes animate-bar {
+    100%{
+        stroke-dashoffset: -1;
+    }
+}
+
+.path {
+    stroke-width: 10;
+    stroke: #0ef;
+    fill: transparent;
+    stroke-dashoffset: 502;
+    stroke-dasharray: 502;
+    stroke-linecap: round;
+}
+
+
+.path-1 {
+    animation: animate-path1 1s 1s linear forwards;
+}
+.path-2 {
+    animation: animate-path2 1s 1s linear forwards;
+}
+.path-3 {
+    animation: animate-path3 1s 1s linear forwards;
+}
+.path-4 {
+    animation: animate-path4 1s 1s linear forwards;
+}
+.path-5 {
+    animation: animate-path5 1s 1s linear forwards;
+}
+
+
+@keyframes animate-path1 {
+    100%{
+        stroke-dashoffset: 50;
+    }
+}
+@keyframes animate-path2 {
+    100%{
+        stroke-dashoffset: 175;
+    }
+}
+@keyframes animate-path3 {
+    100%{
+        stroke-dashoffset: 125;
+    }
+}
+@keyframes animate-path4 {
+    100%{
+        stroke-dashoffset: 75;
+    }
+}
+
+@keyframes animate-path5 {
+    100%{
+        stroke-dashoffset: 50;
+    }
+}
+
+
+.radial-bar .percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+
+
+
+.radial-bar .professional-text {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    left: 120%;
+    bottom : 70px;
+    transform: translateX(-50px);
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}

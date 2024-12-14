@@ -5,6 +5,7 @@ import "./Home.css";
 import MyImage from "../../assets/my-image.png";
 import About from "../about/About";
 import Services from "../Services/Services";
+import Skills from "../Skills/Skills";
 
 const Home = () => {
   const typedRef = useRef(null);
@@ -81,6 +82,8 @@ const Home = () => {
       <About />
 
       <Services />
+
+      <Skills />
     </>
   );
 };
